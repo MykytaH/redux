@@ -22,3 +22,15 @@
 .success {
   background-color: #1ad1b991;
 }
+
+@media (max-width: 450px) {
+  .notification h2 {
+    display: none;
+  }
+  .notification p {
+    text-align: center;
+  }
+  .notification {
+    justify-content: center;
+  }
+}
