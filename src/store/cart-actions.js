@@ -13,7 +13,7 @@ export function sendCartData(cart) {
 
     try {
       const response = await fetch(
-        "https://my-project-noway-default-rtdb.europe-west1.firebasedatabase.app/cart.json",
+        "https://for-redux-a8bde-default-rtdb.europe-west1.firebasedatabase.app/cart.json",
         {
           method: "PUT",
           body: JSON.stringify(cart),
@@ -47,7 +47,7 @@ export function fetchCartData() {
   return async (dispatch) => {
     try {
       const response = await fetch(
-        "https://my-project-noway-default-rtdb.europe-west1.firebasedatabase.app/cart.json"
+        "https://for-redux-a8bde-default-rtdb.europe-west1.firebasedatabase.app/cart.json"
       );
 
       const data = await response.json();
